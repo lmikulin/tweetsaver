@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tweet Saver</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h2>Tweet Saver</h2>
+    </header>
+    <div class="content">
+      <div class="column">
+        <div class="column-top">
+          <form class="stretch" id="inputform">
+            <div class="input-row">
+              <input name="keyword" type="text" placeholder="search twitter" class="stretch" />
+              <button type="submit"><img src="search.svg" /></button>
+            </div>
+          </form>
+        </div>
+        <div id="tweets"></div>
+      </div>
+      <div class="column">
+        <div class="column-top">
+          <div class="info">Saved Tweets</div>
+        </div>
+        <div id="dropbin">
+          <ul class="list-group" id="droplist"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="saver.js"></script>
+  </body>
+</html>
